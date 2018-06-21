@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-sm-8" style="margin:50px auto">
+        <div class="card bg-light border-secondary">
+            <div class="card-header bg-dark">
+                <h1 class="text-light display-4">REGISTER</h1>
+            </div>
+            <div class="card-body">
+                <form name="registerForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="registerEmployee">Username</label>
+                            <input type="text" class="form-control" id="registerEmployee" placeholder="name" ng-model="form1.name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="registerPswd">Password</label>
+                            <input type="password" class="form-control" id="registerPswd" placeholder="Password" ng-model="form1.password">
+                        </div>
+                    </div>
+                   
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="registerEmail">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" ng-model="form1.email">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="registerLocation">Location</label>
+                            <input type="text" class="form-control" id="registerLocation" ng-model="form1.location">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="registerPhone">Phone</label>
+                            <input type="number" class="form-control" id="registerPhone" ng-model="form1.phone">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="registerSelecteduser">User Type</label>
+                            <select class="custom-select" id="registerSelecteduser" name="selecteduser" ng-model="form1.selecteduser" ng-options="employee for employee in options"></select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success" ng-click="registerNewEmployee()">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

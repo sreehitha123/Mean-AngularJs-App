@@ -1,0 +1,14 @@
+
+<table class="table">
+        <tr>
+            <th>Title</th>
+            <th>Keyword</th>
+            <th>Location</th>
+        </tr>
+        <tr ng-repeat="item in searchedItems | filter: searchFilter ">
+            <td>{{ item.title }}</td>
+            <td>{{ item.description }}</td>
+           
+        </tr>
+ 
+    </table>

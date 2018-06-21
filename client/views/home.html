@@ -1,0 +1,6 @@
+<div class="container">
+    <h1 class="display-4" style="text-align: center">Welcome {{employee.name.toUpperCase()}}</h1>
+
+    <button class="btn btn-info" ng-if="selectedUser == 'Job Seeker'" ng-click="searchjob()">Search Job</button>
+    <button class="btn btn-success" ng-if="selectedUser == 'Company'" ng-click="postjob()">Post Job</button>
+</div>

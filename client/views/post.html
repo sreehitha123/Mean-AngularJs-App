@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-sm-6"  style="margin:50px auto">
+        <div class="card bg-light border-secondary">
+            <div class="card-header bg-dark">
+                <h1 class="text-light display-4">POST NEW JOB</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="InputTitle">Title</label>
+                        <input type="text" class="form-control" id="InputTitle"placeholder="Job Title" ng-model="postNewJob.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputDescription">Description</label>
+                        <textarea id="InputDescription" class="form-control" ng-model="postNewJob.description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputKeywords">Keyword</label>&nbsp;&nbsp;&nbsp;&nbsp;<em class="text text-success">Use comma "," for seperating keywords</em>
+                        <input type="text" id="InputKeywords" class="form-control" ng-model="allKeywords"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputLocation">Location</label>
+                        <input type="text" id="InputLocation" class="form-control" ng-model="postNewJob.location"></input>
+                    </div>
+                    <button type="submit" class="btn btn-success" ng-click="postJob()">Save Jobs</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
